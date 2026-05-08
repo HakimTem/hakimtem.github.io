@@ -1,0 +1,8 @@
+---
+const {title, summary, link} = Astro.props
+---
+<article class="problem">
+  <h3>{title}</h3>
+  <p>{summary}</p>
+  {link ? <a class="btn" href={link}>Read notes</a> : <a class="btn" href="#">Read notes</a>}
+</article>
