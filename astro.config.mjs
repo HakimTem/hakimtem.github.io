@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config'
 
 export default defineConfig({
-  site: '/',
+  site: 'https://hakimtem.github.io',
+  output: 'static',
 })
