@@ -55,23 +55,9 @@ a:hover {
   display: flex;
   min-height: 44px;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 32px;
   border-bottom: 1px solid var(--rule);
-}
-
-.header-brand {
-  color: var(--ink);
-  font-family: var(--serif);
-  font-size: 1.18rem;
-  font-weight: 700;
-  line-height: 1;
-  text-decoration: none;
-}
-
-.header-brand span {
-  color: var(--accent);
-  margin-left: 0.18em;
 }
 
 .nav {
@@ -345,10 +331,6 @@ a:hover {
   .header-grid {
     min-height: auto;
     padding: 0 0 18px;
-  }
-
-  .header-brand {
-    display: block;
   }
 
   .nav {
