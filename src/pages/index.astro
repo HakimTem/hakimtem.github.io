@@ -1,69 +1,106 @@
 ---
 import Header from '../components/Header.astro'
-import ProblemCard from '../components/ProblemCard.astro'
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hakim — Math · CS · Physics</title>
+    <title>Hakim Temacini — Mathematics & Computer Science</title>
     <link rel="stylesheet" href="/styles.css" />
   </head>
   <body>
-    <Header title="Hakim" />
+    <Header title="Hakim Temacini" />
 
-    <main class="container">
-      <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>
-          I'm a Mathematics & Computer Science graduate with a minor in Physics.
-          My interests lie at the intersection of rigorous theory and clean
-          computation — from pure mathematics and theoretical physics to
-          shipping well-engineered Android apps.
+    <main class="container page-shell">
+      <section id="about" class="hero">
+        <h1>Hakim Temacini</h1>
+        <p class="credentials">
+          Mathematics &amp; Computer Science Student <span aria-hidden="true">•</span>
+          Physics Minor <span aria-hidden="true">•</span>
+          Researcher <span aria-hidden="true">•</span>
+          Software Developer
         </p>
-        <p>
-          I enjoy problem-solving that blends abstraction (proofs, formal models)
-          with practical constraints (algorithms, performance on-device).
+        <p class="intro">
+          I work across mathematical physics, scientific computing, and software
+          engineering. My recent work includes black hole physics research,
+          machine learning for phase detection, spacecraft attitude
+          determination, and software engineering at Intel/Altera.
         </p>
-        <ul class="skills">
-          <li>Interests: Theoretical physics, algebraic geometry, analytic number theory</li>
-          <li>Tech: Kotlin/Java (Android), Python, C++</li>
-          <li>Tools: Git, Linux, unit testing</li>
-        </ul>
-      </section>
-
-      <section id="problems" class="card">
-        <h2>Selected Problems</h2>
-        <p>Short statements and notes on problems I've worked on or find interesting.</p>
-        <div class="grid problems-grid">
-          <ProblemCard title="Geodesics on negatively curved surfaces" summary="Spectral properties of the Laplacian and links to ergodicity and mixing." />
-          <ProblemCard title="Diophantine approximations" summary="Metric results and approximation constants for algebraic numbers." />
-          <ProblemCard title="Variational methods in toy QFT" summary="Existence of soliton-like solutions via constrained minimisation." />
-          <ProblemCard title="Optimising on-device ML" summary="Model quantisation and algorithmic speedups for Android inference." />
+        <div class="contact-links" aria-label="Contact links">
+          <a href="https://github.com/hakimtem">GitHub</a>
+          <a href="#experience">Resume</a>
+          <a href="mailto:hemacini@gmail.com">Email</a>
         </div>
       </section>
 
-      <section id="projects" class="card">
-        <h2>Android Apps</h2>
-        <p>Selected apps I developed, focusing on usability and efficient implementations.</p>
-        <ul class="projects">
-          <li><strong>MathSketch</strong> — interactive sketches for visualising curves and transformations.</li>
-          <li><strong>PhysSim</strong> — physics simulations for exploring mechanics concepts.</li>
-        </ul>
+      <section id="research" class="cv-section">
+        <h2>Research</h2>
+        <div class="section-body">
+          <p>
+            My research interests sit around mathematical physics, black hole
+            thermodynamics, quantum field theory, and scientific computation.
+          </p>
+        </div>
       </section>
 
-      <section id="contact" class="card small">
+      <section id="publications" class="cv-section">
+        <h2>Selected Publications</h2>
+        <div class="section-body">
+          <ul class="entry-list">
+            <li>
+              <strong>Thermodynamics and Causal Structure of Black Holes on Eguchi-Hanson Instantons</strong>
+              <span>Accepted, General Relativity and Gravitation (2026)</span>
+            </li>
+            <li>
+              <strong>False Vacuum Decay Around a Schwarzschild Black Hole</strong>
+              <span>Undergraduate thesis / in preparation</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="cv-section">
+        <h2>Experience</h2>
+        <div class="section-body">
+          <ul class="entry-list">
+            <li>
+              <strong>Intel / Altera — Software Engineering Intern</strong>
+              <span>Worked on FPGA tooling, frontend testing, and ML deployment infrastructure</span>
+            </li>
+            <li>
+              <strong>McMaster University — Research Assistant</strong>
+              <span>Research in mathematical physics, black hole thermodynamics, and quantum field theory</span>
+            </li>
+            <li>
+              <strong>McMaster Interdisciplinary Satellite Team — ADCS</strong>
+              <span>Built attitude determination and control algorithms for a nanosatellite</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="cv-section">
+        <h2>Highlights</h2>
+        <div class="section-body">
+          <ul class="entry-list compact">
+            <li>Top 500 — William Lowell Putnam Competition</li>
+            <li>ICPC Competitor — McMaster University</li>
+            <li>Springer accepted publication</li>
+            <li>NASA Space Apps Challenge winner / global nominee</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="cv-section final-section">
         <h2>Contact</h2>
-        <p>Email: <a href="mailto:hemacini@gmail.com">hemacini@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/hakimtem">github.com/hakimtem</a></p>
+        <div class="section-body">
+          <ul class="entry-list compact">
+            <li><a href="mailto:hemacini@gmail.com">hemacini@gmail.com</a></li>
+            <li><a href="https://github.com/hakimtem">github.com/hakimtem</a></li>
+          </ul>
+        </div>
       </section>
     </main>
-
-    <footer class="site-footer">
-      <div class="container">
-        <p>© Hakim — Theoretical physics, pure math, Android development.</p>
-      </div>
-    </footer>
   </body>
 </html>
