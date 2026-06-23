@@ -1,0 +1,37 @@
+---
+import Header from '../components/Header.astro'
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Resume — Hakim Temacini</title>
+    <link rel="stylesheet" href="/styles.css?v=20260623-diagrams" />
+  </head>
+  <body>
+    <Header title="Hakim Temacini" />
+
+    <main class="container resume-shell">
+      <header class="resume-header">
+        <div>
+          <h1>Resume</h1>
+          <p>Preview Hakim Temacini's resume.</p>
+        </div>
+        <div class="resume-actions">
+          <a href="/resume.pdf" target="_blank" rel="noreferrer">Open PDF</a>
+          <a href="/resume.pdf" download>Download</a>
+        </div>
+      </header>
+
+      <section class="resume-preview" aria-label="Resume PDF preview">
+        <object data="/resume.pdf" type="application/pdf">
+          <p>
+            The PDF preview is not available in this browser.
+            <a href="/resume.pdf">Open the resume PDF instead.</a>
+          </p>
+        </object>
+      </section>
+    </main>
+  </body>
+</html>
