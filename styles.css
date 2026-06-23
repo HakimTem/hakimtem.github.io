@@ -221,9 +221,17 @@ a:hover {
 .rustic-figure text {
   fill: var(--sketch);
   font-family: var(--serif);
-  font-size: 14px;
+  font-size: 12px;
   font-style: italic;
   opacity: 0.78;
+}
+
+.kruskal text {
+  font-size: 11px;
+}
+
+.potential text {
+  font-size: 11px;
 }
 
 .sketch-line {
@@ -245,6 +253,33 @@ a:hover {
   opacity: 0.45;
 }
 
+.sketch-line.boundary {
+  opacity: 0.5;
+}
+
+.sketch-line.horizon {
+  opacity: 0.46;
+  stroke-dasharray: 5 5;
+}
+
+.sketch-line.singularity {
+  opacity: 0.68;
+  stroke-width: 1.4;
+}
+
+.sketch-line.axis {
+  opacity: 0.24;
+}
+
+.sketch-arrow {
+  fill: none;
+  stroke: var(--sketch);
+  stroke-width: 0.95;
+  stroke-linecap: round;
+  stroke-dasharray: 3 4;
+  opacity: 0.42;
+}
+
 .sketch-dot {
   fill: var(--sketch);
   opacity: 0.65;
@@ -261,11 +296,11 @@ a:hover {
 
 .equation-strip {
   display: grid;
-  gap: 6px;
+  gap: 4px;
   width: min(100%, 340px);
   color: var(--sketch);
   font-family: var(--serif);
-  font-size: 1.03rem;
+  font-size: 0.94rem;
   font-style: italic;
   line-height: 1.45;
   text-align: center;
