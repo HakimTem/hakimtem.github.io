@@ -113,33 +113,51 @@ import Header from '../components/Header.astro'
       </div>
 
       <aside class="visual-column" aria-label="Mathematical physics sketches">
-        <svg class="rustic-figure penrose" viewBox="0 0 260 220" role="img" aria-label="Penrose-style spacetime diagram">
-          <path class="sketch-line" d="M130 16 L238 110 L130 204 L22 110 Z" />
-          <path class="sketch-line faint" d="M66 70 L66 150 M194 70 L194 150 M66 70 L130 16 M66 150 L130 204 M194 70 L130 16 M194 150 L130 204" />
-          <path class="sketch-line faint" d="M36 110 C72 96 94 94 130 110 C166 126 188 124 224 110" />
-          <path class="sketch-line faint" d="M36 110 C72 124 94 126 130 110 C166 94 188 96 224 110" />
-          <path class="sketch-line faint" d="M66 76 C100 92 118 102 130 110 M66 144 C100 128 118 118 130 110" />
-          <text x="28" y="72">r = 2M</text>
-          <text x="30" y="119">r = 0</text>
-          <text x="206" y="105">I<tspan dy="-6" font-size="12">0</tspan></text>
-          <text x="180" y="38">I<tspan dy="-6" font-size="12">+</tspan></text>
-          <text x="180" y="194">I<tspan dy="-6" font-size="12">−</tspan></text>
-          <circle class="sketch-dot" cx="130" cy="110" r="2.5" />
+        <svg class="rustic-figure kruskal" viewBox="0 0 320 260" role="img" aria-label="Kruskal-Szekeres causal diagram for Schwarzschild spacetime">
+          <path class="sketch-line boundary" d="M160 18 L292 130 L160 242 L28 130 Z" />
+          <path class="sketch-line horizon" d="M44 130 L160 18 L276 130 M44 130 L160 242 L276 130" />
+          <path class="sketch-line singularity" d="M82 66 C118 43 202 43 238 66" />
+          <path class="sketch-line singularity" d="M82 194 C118 217 202 217 238 194" />
+          <path class="sketch-line faint" d="M160 18 V242 M28 130 H292" />
+          <path class="sketch-line faint" d="M82 66 C102 96 127 116 160 130 C193 144 218 164 238 194" />
+          <path class="sketch-line faint" d="M238 66 C218 96 193 116 160 130 C127 144 102 164 82 194" />
+          <path class="sketch-line faint" d="M44 130 C85 111 119 112 160 130 C201 148 235 149 276 130" />
+          <text x="145" y="13">r = 0</text>
+          <text x="143" y="255">r = 0</text>
+          <text x="215" y="122">I</text>
+          <text x="95" y="122">III</text>
+          <text x="151" y="69">II</text>
+          <text x="147" y="199">IV</text>
+          <text x="245" y="52">𝓘<tspan dy="-7" font-size="11">+</tspan></text>
+          <text x="246" y="215">𝓘<tspan dy="-7" font-size="11">−</tspan></text>
+          <text x="15" y="52">𝓘<tspan dy="-7" font-size="11">+</tspan></text>
+          <text x="15" y="215">𝓘<tspan dy="-7" font-size="11">−</tspan></text>
+          <text x="174" y="34">H<tspan dy="-6" font-size="10">+</tspan></text>
+          <text x="174" y="238">H<tspan dy="-6" font-size="10">−</tspan></text>
+          <circle class="sketch-dot" cx="160" cy="130" r="2.3" />
         </svg>
 
-        <svg class="rustic-figure potential" viewBox="0 0 260 160" role="img" aria-label="Vacuum decay potential sketch">
-          <path class="sketch-line faint" d="M30 122 H228 M48 142 V22" />
-          <path class="sketch-line" d="M48 122 C72 116 73 76 96 84 C122 96 128 114 152 111 C174 108 174 134 193 136 C214 138 216 55 226 26" />
-          <path class="sketch-line dashed" d="M96 84 C119 73 143 101 158 112 C176 124 183 132 193 136" />
-          <path class="sketch-line faint" d="M101 86 L122 84 M154 113 L178 119" />
-          <circle class="sketch-dot" cx="96" cy="84" r="3" />
-          <text x="32" y="18">V(ϕ)</text>
-          <text x="230" y="126">ϕ</text>
+        <svg class="rustic-figure potential" viewBox="0 0 320 200" role="img" aria-label="False vacuum decay scalar potential">
+          <path class="sketch-line axis" d="M42 162 H286 M62 182 V24" />
+          <path class="sketch-line" d="M62 78 C84 82 88 119 112 126 C139 134 143 65 170 66 C201 67 202 142 232 158 C257 171 274 74 286 34" />
+          <path class="sketch-line dashed" d="M112 126 C140 97 166 84 190 100 C212 115 221 145 232 158" />
+          <path class="sketch-line faint" d="M112 126 H232 M232 158 H272 M112 126 V162 M170 66 V162 M232 158 V162" />
+          <path class="sketch-arrow" d="M132 109 C151 94 172 91 192 103" />
+          <circle class="sketch-dot" cx="112" cy="126" r="3" />
+          <circle class="sketch-dot" cx="170" cy="66" r="2.5" />
+          <circle class="sketch-dot" cx="232" cy="158" r="3" />
+          <text x="42" y="19">V(ϕ)</text>
+          <text x="288" y="166">ϕ</text>
+          <text x="97" y="117">ϕ<tspan dy="4" font-size="10">f</tspan></text>
+          <text x="238" y="151">ϕ<tspan dy="4" font-size="10">t</tspan></text>
+          <text x="150" y="53">barrier</text>
+          <text x="75" y="184">false vacuum</text>
+          <text x="203" y="187">true vacuum</text>
         </svg>
 
         <div class="equation-strip">
-          <span>ds² = −(1 − 2M/r)dt² + (1 − 2M/r)<sup>−1</sup>dr²</span>
-          <span>+ r²(dθ² + sin²θ dϕ²)</span>
+          <span>ds² = −(1 − 2M/r) dt² + (1 − 2M/r)<sup>−1</sup> dr²</span>
+          <span>+ r²(dθ² + sin²θ dφ²)</span>
         </div>
 
         <svg class="rustic-figure field" viewBox="0 0 300 210" role="img" aria-label="Radial field line sketch">
